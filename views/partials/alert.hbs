@@ -1,0 +1,20 @@
+<div id="myAlert" class="modal">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong id="AlertTitle"></strong>
+    <p id="AlertMessage"></p>
+    <button id="AlertClose" type="button" class="btn-close" data-bs-dismiss="alert"
+      aria-label="Close"></button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function openalert(data) {
+    document.getElementById("AlertTitle").innerHTML = data.Title;
+    document.getElementById("AlertMessage").innerHTML = data.Message;
+    document.getElementById("AlertClose").onclick = function(e){closealert(data)};
+    document.getElementById("myAlert").style.display = "block";//open
+  }
+  function closealert(data) {
+    location.href = data.AcceptUrl
+  }
+</script>

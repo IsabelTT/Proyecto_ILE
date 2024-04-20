@@ -1,0 +1,47 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 min-vh-100 d-flex flex-column justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <div class="text-center mb-4">
+                        <img src="/img/bootstrap-logo.svg" class="d-block mx-auto" alt="..." width="auto" height="50">
+                        <br>
+                        <h3 class="">Clinica Isabela Labela</h3>
+                    </div>
+                    <!-- form card login -->
+                    <div class="card rounded-2 shadow shadow-sm">
+                        <div class="card-header">
+                            <h4 class="mb-0">Login</h4>
+                        </div>
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="post"
+                                action="/autentificarUsuario">
+                                <div class="form-group">
+                                    <label for="uname1">Username</label>
+                                    <input type="text" class="form-control rounded-2" name="user" id="uname1"
+                                        required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control rounded-2" id="pwd1" name="psw"
+                                        required="">
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary" id="btnLogin">Entrar</button>
+                            </form>
+                            <br>
+                            <p>No tienes cuenta? / <a type="button" href="/signup"><span>Registrate</span></a></p>
+                        </div>
+                        <!--/card-block-->
+                    </div>
+                    <!-- /form card login -->
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->

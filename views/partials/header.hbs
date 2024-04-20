@@ -1,0 +1,52 @@
+<header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <div class="col">
+                <div class="container">
+                    <img src="/img/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24"> &nbsp; Clinica Isabela Labela
+                </div>
+            </div>
+            <div class="col">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/citas">Citas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="dropdown d-flex justify-content-end">
+                    
+                    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" ><i style = "color:white" class="d-inline bi bi-person primary"></i> &nbsp; <p id="LogedUser" class="d-inline"></p></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+<script>
+    function getCookie(name) {
+        let nameEQ = name + "=";
+        let ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === " ") c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,
+                c.length);
+        }
+        return null;
+    };
+
+    document.getElementById("LogedUser").innerHTML = getCookie('user')
+</script>
