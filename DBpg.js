@@ -1,6 +1,5 @@
-//import { config } from 'dotenv'
-//config()
-
+//Configuracion de Variables de entorno
+//Se ha creado un fichero .env y estas variables tambien estan en la plataforma Render
 const Pool = require('pg').Pool
 const pool = new Pool({
 
@@ -20,9 +19,3 @@ const pool = new Pool({
 //Variable global :
 global.db = pool;
 
-
-// #   user: 'postgres',
-// #   host: 'localhost',
-// #   database: 'Clinica_oftalmologica',
-// #    port: 5432,
-// #    user: 'itt',
