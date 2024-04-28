@@ -1,5 +1,5 @@
-import { config } from 'dotenv'
-config()
+//import { config } from 'dotenv'
+//config()
 
 const Pool = require('pg').Pool
 const pool = new Pool({
