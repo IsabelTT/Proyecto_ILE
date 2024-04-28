@@ -19,3 +19,10 @@ const pool = new Pool({
 
 //Variable global :
 global.db = pool;
+
+
+// #   user: 'postgres',
+// #   host: 'localhost',
+// #   database: 'Clinica_oftalmologica',
+// #    port: 5432,
+// #    user: 'itt',
