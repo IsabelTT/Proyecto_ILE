@@ -1,5 +1,5 @@
-//import { config } from 'dotenv'
-//config()
+import { config } from 'dotenv'
+config()
 
 const Pool = require('pg').Pool
 const pool = new Pool({
@@ -9,9 +9,8 @@ const pool = new Pool({
   database: 'clinicaoftalmologica_itt',
   password: 'RBL6Ndnn7sfWmoaX9omVIllhhKBDmwPP',
   port: 5432,
-  ssl: true
-
-  // connectionString: 'postgres://itt:RBL6Ndnn7sfWmoaX9omVIllhhKBDmwPP@dpg-coij7sf79t8c738hu5c0-a.oregon-postgres.render.com/clinicaoftalmologica_itt'
+  ssl: true,
+  connectionString: process.env.DATABASE_URL
 
   // En Local: 
   // user: 'postgres',
