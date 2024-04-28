@@ -11,7 +11,7 @@ const pool = new Pool({
   port: process.env.DB_PORT,
   //External URL de render
   connectionString: process.env.DATABASE_URL,
-  //ssl: true,
+  ssl: true,
 
 
 
