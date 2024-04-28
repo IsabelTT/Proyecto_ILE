@@ -16,12 +16,12 @@ loginCtrl.login = (req, res, next) => {
 loginCtrl.autentificarUsuario = async (req, res) => {
     const usuario = await ModelUsuarios.ReadByUserPsw(req.body);
     if (usuario.length == 0) {
-        console.log("no existe usuairo o no se escribiron correctamente las credenciales");
+        console.log("no existe usuario o no se escribiron correctamente las credenciales");
 
         dataAlert = JSON.stringify(
             {
                 Title: "Aviso!!!",
-                Message: "No existe usuairo o no se escribiron correctamente las credenciales",
+                Message: "No existe usuario o no se escribiron correctamente las credenciales",
                 AcceptUrl: "/"
             })
         alertScript = `<script>openalert(${dataAlert})</script>`
